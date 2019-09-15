@@ -1,0 +1,31 @@
+
+GET http://localhost:3001/studentsCourses
+
+###
+
+GET http://localhost:3001/studentsCourses/estudiante1@prueba.com
+
+###
+
+POST http://localhost:3001/studentsCourses
+Content-Type: application/json
+
+{
+    "courseId": "estudiante1@prueba.com",
+    "nameCourse": "Prueba 5678",
+    "codeCourse": "PRUEBA-5678",
+    "gradeObjective": "3,5"
+}
+
+###
+
+DELETE http://localhost:3001/studentsCourses/estudiante1@prueba.com
+
+###
+
+PATCH http://localhost:3001/studentsCourses/estudiante1@prueba.com/PRUEBA-5678
+Content-Type: application/json
+
+{
+    "nameCourse": "Cambie el nombre del curso de nuevo"
+}

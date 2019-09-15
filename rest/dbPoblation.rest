@@ -1,0 +1,375 @@
+
+POST http://localhost:3001/courses
+Content-Type: application/json
+
+[
+  {
+    "code": "ISIS-1001",
+    "name": "INTRODUCCION A LA INGENIERIA DE SISTEMAS",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-1002",
+    "name": "ACOMPANAMIENTO INGENIERIA DE SISTEMAS",
+    "credits": 0,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-1104",
+    "name": "MATEMATICA ESTRUCTURAL Y LOGICA",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-1105",
+    "name": "DISENO Y ANALISIS DE ALGORITMOS",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-1106",
+    "name": "LENGUAJES Y MAQUINAS",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-1204",
+    "name": "ALGORITMICA Y PROGRAMACION ORIENTADA POR OBJETOS I",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-1205",
+    "name": "ALGORITMICA Y PROGRAMACION ORIENTADA POR OBJETOS II",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-1206",
+    "name": "ESTRUCTURAS DE DATOS",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-1207",
+    "name": "ALGORITMICA Y PROGRAMACION OBJETOS. I (HONORES)",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-1209",
+    "name": "ALGORITMICA Y PROGRAMACION OBJETOS. II (HONORES)",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-1211",
+    "name": "CUPI TALLER",
+    "credits": 0,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-1304",
+    "name": "INFRAESTRUCTURA TECNOLOGICA",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-1404",
+    "name": "TI EN LAS ORGANIZACIONES (Tipo E)",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-2007",
+    "name": "DISENO DE PRODUCTOS E INNOVACION EN TI",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-2008",
+    "name": "VISION ISIS",
+    "credits": 0,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-2203",
+    "name": "INFRAESTRUCTURA COMPUTACIONAL",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-2304",
+    "name": "SISTEMAS TRANSACCIONALES",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-2403",
+    "name": "ARQUITECTURA EMPRESARIAL",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-2503",
+    "name": "ARQUITECTURA Y DISENO DE SOFTWARE",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-2603",
+    "name": "DESARROLLO DE SW EN EQUIPO",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-2804",
+    "name": "LABORATORIO MARATONES PROGRAMACION",
+    "credits": 1,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-3007",
+    "name": "PROYECTO DE GRADO",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-3204",
+    "name": "INFRAESTRUCTURA DE COMUNICACIONES",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-3301",
+    "name": "INTELIGENCIA DE NEGOCIOS",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-3302",
+    "name": "MODELADO SIMULACION Y OPTIMIZACION",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-3425",
+    "name": "SISTEMAS EMPRESARIALES",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-3510",
+    "name": "CONSTR. APLICACIONES MOVILES",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-3710",
+    "name": "PROGRAMACION CON TECNOLOGIAS WEB",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-3990",
+    "name": "INSCRIPCION A GRADO",
+    "credits": 0,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-3991",
+    "name": "PRACTICA PROFESIONAL",
+    "credits": 6,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-4000",
+    "name": "TESIS I",
+    "credits": 4,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-4001",
+    "name": "TESIS II",
+    "credits": 8,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-4005",
+    "name": "INTERCAMBIO DE MAESTRIA",
+    "credits": 0,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-4220",
+    "name": "VERIFICACION DE SOFTWARE",
+    "credits": 4,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-4208",
+    "name": "ANALISIS DE ALGORITMOS",
+    "credits": 3,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-4218",
+    "name": "CONCURRENCIA PARALELISMO Y DISTRIBUCION",
+    "credits": 4,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-4423",
+    "name": "TECNOLOGIAS PARA EL DISENO DE REDES DE COMUNICACIONES LAN Y WAN",
+    "credits": 4,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-4426",
+    "name": "DESARROLLO DE SOLUCIONES CLOUD",
+    "credits": 4,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-4822",
+    "name": "VISUAL ANALYTICS",
+    "credits": 4,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-4823",
+    "name": "COMPUTACION VISUAL INTERACTIVA",
+    "credits": 4,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-4826",
+    "name": "ROBOTICA MOVIL Y SISTEMAS AUTONOMOS",
+    "credits": 4,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-4920",
+    "name": "SEMINARIO IMAGINE",
+    "credits": 0,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-6402",
+    "name": "PASANTIA SEMESTRAL",
+    "credits": 0,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-6980",
+    "name": "TESIS 4CR",
+    "credits": 4,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-6981",
+    "name": "TESIS 8CR",
+    "credits": 8,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-6982",
+    "name": "TESIS 12CR",
+    "credits": 12,
+    "department": "Ingenieria de Sistemas y Computacion"
+  },
+  {
+    "code": "ISIS-6983",
+    "name": "TESIS 16CR",
+    "credits": 16,
+    "department": "Ingenieria de Sistemas y Computacion"
+  }
+]
+
+###
+
+POST http://localhost:3001/students
+Content-Type: application/json
+
+[
+    {
+        "name":"Camilo Beltran",
+        "mail":"camilo@beltran.com",
+        "password":"abcde12345"
+    },
+    {
+        "name":"Carlos Mendoza",
+        "mail":"carlos@mendoza.com",
+        "password":"abcde12345"
+    }
+]
+
+###
+
+POST http://localhost:3001/studentsCourses
+Content-Type: application/json
+
+[
+    {
+        "courseId": "camilo@beltran.com",
+        "nameCourse": "PROGRAMACION CON TECNOLOGIAS WEB",
+        "codeCourse": "ISIS-3710",
+        "gradeObjective": 3.12
+    }, {
+        "courseId": "camilo@beltran.com",
+        "nameCourse": "MATEMATICA ESTRUCTURAL Y LOGICA",
+        "codeCourse": "Blue",
+        "gradeObjective": 3.32
+    }, {
+        "courseId": "camilo@beltran.com",
+        "nameCourse": "CONSTR. APLICACIONES MOVILES",
+        "codeCourse": "ISIS-3510",
+        "gradeObjective": 3.56
+    }, {
+        "courseId": "camilo@beltran.com",
+        "nameCourse": "SISTEMAS EMPRESARIALES",
+        "codeCourse": "ISIS-3425",
+        "gradeObjective": 4.95
+    }, {
+        "courseId": "camilo@beltran.com",
+        "nameCourse": "MODELADO SIMULACION Y OPTIMIZACION",
+        "codeCourse": "ISIS-3302",
+        "gradeObjective": 4.74
+    }, {
+        "courseId": "camilo@beltran.com",
+        "nameCourse": "INTELIGENCIA DE NEGOCIOS",
+        "codeCourse": "ISIS-3301",
+        "gradeObjective": 3.85
+    }, {
+        "courseId": "carlos@mendoza.com",
+        "nameCourse": "PROGRAMACION CON TECNOLOGIAS WEB",
+        "codeCourse": "ISIS-3710",
+        "gradeObjective": 3.12
+    }, {
+        "courseId": "carlos@mendoza.com",
+        "nameCourse": "MATEMATICA ESTRUCTURAL Y LOGICA",
+        "codeCourse": "Blue",
+        "gradeObjective": 3.32
+    }, {
+        "courseId": "carlos@mendoza.com",
+        "nameCourse": "CONSTR. APLICACIONES MOVILES",
+        "codeCourse": "ISIS-3510",
+        "gradeObjective": 3.56
+    }, {
+        "courseId": "carlos@mendoza.com",
+        "nameCourse": "SISTEMAS EMPRESARIALES",
+        "codeCourse": "ISIS-3425",
+        "gradeObjective": 4.95
+    }, {
+        "courseId": "carlos@mendoza.com",
+        "nameCourse": "MODELADO SIMULACION Y OPTIMIZACION",
+        "codeCourse": "ISIS-3302",
+        "gradeObjective": 4.74
+    }, {
+        "courseId": "carlos@mendoza.com",
+        "nameCourse": "INTELIGENCIA DE NEGOCIOS",
+        "codeCourse": "ISIS-3301",
+        "gradeObjective": 3.85
+    }
+]

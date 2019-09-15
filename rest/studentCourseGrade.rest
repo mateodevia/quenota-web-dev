@@ -1,0 +1,31 @@
+
+GET http://localhost:3001/studentsCoursesGrades
+
+###
+
+GET http://localhost:3001/studentsCoursesGrades/estudiante1@prueba.comPRUEBA-1234
+
+###
+
+POST http://localhost:3001/studentsCoursesGrades
+Content-Type: application/json
+
+{
+    "gradeId": "estudiante1@prueba.comPRUEBA-1234",
+    "nameGrade": "Parcial 1",
+    "currentGrade": "2",
+    "percentage": "30"
+}
+
+###
+
+DELETE http://localhost:3001/studentsCoursesGrades/estudiante1@prueba.comPRUEBA-1234
+
+###
+
+PATCH http://localhost:3001/studentsCoursesGrades/estudiante1@prueba.comPRUEBA-1234/Parcial 1
+Content-Type: application/json
+
+{
+    "currentGrade": "5"
+}

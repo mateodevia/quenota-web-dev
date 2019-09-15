@@ -1,0 +1,39 @@
+
+GET http://localhost:3001/courses
+
+###
+
+GET http://localhost:3001/courses/ADMI-1102
+
+###
+
+POST http://localhost:3001/courses
+Content-Type: application/json
+
+[
+    {
+        "code": "TEST-4567",
+        "name": "Test 1",
+        "credits": "3",
+        "department": "TEST DEPARTMENT"
+        },
+    {
+        "code": "TEST-4567",
+        "name": "Test 1",
+        "credits": "3",
+        "department": "TEST DEPARTMENT"
+    }
+]
+
+###
+
+DELETE http://localhost:3001/courses/Cambie el nombre
+
+###
+
+PATCH http://localhost:3001/courses/Cambie+el+nombre
+Content-Type: application/json
+
+{
+    "name": "Cambie el nombre"
+}

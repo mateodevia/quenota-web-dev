@@ -1,0 +1,37 @@
+
+GET http://localhost:3001/students
+
+###
+
+GET http://localhost:3001/students/estudiante2@prueba.com
+
+###
+
+POST http://localhost:3001/students
+Content-Type: application/json
+
+[
+  {
+    "name": "Estudiante 2",
+    "mail": "estudiante2@prueba.com",
+    "password": "clavePrueba2"
+  },
+  {
+    "name": "Estudiante 2",
+    "mail": "estudiante2@prueba.com",
+    "password": "clavePrueba2"
+  }
+]
+
+###
+
+DELETE http://localhost:3001/students/estudiante2@prueba.com
+
+###
+
+PATCH http://localhost:3001/students/estudiante2@prueba.com
+Content-Type: application/json
+
+{
+    "name": "Cambie el nombre del estudiante 2"
+}
