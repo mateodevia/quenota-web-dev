@@ -14,7 +14,7 @@ const Grade = (props)=> {
         <div className="col-md-3 borde">
           <input type="text" class="form-control input-course" id="porcentaje" name="porcentaje" value={percentage} readOnly/>
         </div>
-        
+
       </div>
 
     </div>

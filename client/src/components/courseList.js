@@ -8,9 +8,9 @@ class  CourseList extends React.Component {
     let email = localStorage.getItem("email")
     this.state ={
       courses:[],idCurrentCourse:'',email:email
-    
+
     };
-    
+
     this.fetchTasks = this.fetchTasks.bind(this);
     this.actualizar = this.actualizar.bind(this);
     this.enviarURL = this.enviarURL.bind(this);
@@ -18,7 +18,7 @@ class  CourseList extends React.Component {
   }
   componentDidMount() {
     this.fetchTasks();
-    
+
   }
   actualizar(listaCursos){
     console.log("actualizar")
@@ -37,13 +37,13 @@ class  CourseList extends React.Component {
     else{
       this.setState({idCurrentCourse:id})
     }
-    
+
   }
   fetchTasks() {
     let listaCursos =[]
     let email = this.state.email
     console.log(email)
-    fetch(`http://localhost:3001/students/${email}`)
+    fetch(`http://localhost:5000/students/${email}`)
       .then(res => res.json())
       .then(data => {
 
@@ -58,17 +58,17 @@ class  CourseList extends React.Component {
         data=data['nameCourse']
         console.log("Nombre curso",listaCursos);
         this.actualizar(listaCursos)
-        
-        
+
+
       }});
     }
-  
-  
+
+
   render()
   {
     if(this.state.idCurrentCourse){
       let aux = this.state.idCurrentCourse
-      
+
       return(
       <div className="principal">
       <div className="course-list">
@@ -79,34 +79,34 @@ class  CourseList extends React.Component {
       </ul>
       <hr></hr>
       <button id="nuevo"className="btn btn-light nuevoCurso" onClick={()=>this.enviarURL("nuevo")}>Nuevo</button>
-      
+
     </div>
     <Course idCourse={aux}></Course>
-    
+
     </div>
-    
+
       )
-      
-      
+
+
     }
     else{
     return (
-    
+
     <div>
     <div className="course-list">
       <br></br>
       <h1>Mis Cursos</h1>
       <ul>
       {this.state.courses.map(course => <h4 id={course} onClick={()=>this.enviarURL(course)}>{course}</h4 >)}
-      
+
       </ul>
       <hr></hr>
       <button className="btn btn-light nuevoCurso" onClick={()=>this.enviarURL("nuevo")}>Nuevo</button>
-      
+
     </div>
-    
+
     </div>
-   
+
   );}}
 
 }

@@ -150,7 +150,7 @@ label.checkbox.special input[type="checkbox"]:checked + span:before { content: '
 }
 .principal{
   display: flex;
-  
+
 }
 .course-list h4{
   font-size: 15px;
@@ -161,5 +161,5 @@ label.checkbox.special input[type="checkbox"]:checked + span:before { content: '
 .centrado{
 
   text-align: center
-  
+
 }
