@@ -48,7 +48,7 @@ app.set("port", process.env.PORT || 5000);
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors({ origin: `http://localhost:${port}` }));
+app.use(cors({ origin: "http://localhost:5000" }));
 app.use(expressMongoDb(process.env.DATABASE_URL));
 
 // Routes
