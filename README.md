@@ -34,7 +34,7 @@ So the local DB start and let you connect to it
 
 You need to create a
 `.env`
-file in root of the proyect, in this file you should add the
+File in root of the proyect, in this file you should add the
 `DATABASE_URL=<yourDatabaseURL>`
 
 For example `DATABASE_URL=mongodb://localhost/quenota`
