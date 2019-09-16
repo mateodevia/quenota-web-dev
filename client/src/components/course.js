@@ -70,7 +70,7 @@ class Course extends React.Component {
     let lista = [];
     let todosCursos = [];
     let email = localStorage.getItem("email");
-    fetch(`https://quenota-web-dev.herokuapp.com/:5000/students/${email}`)
+    fetch(`https://quenota-web-dev.herokuapp.com:5000/students/${email}`)
       .then(res => res.json())
       .then(data => {
         data = data["courses"];
@@ -109,7 +109,7 @@ class Course extends React.Component {
 
   fetchGlobalCourses() {
     let lista = [];
-    fetch("https://quenota-web-dev.herokuapp.com/:5000/courses")
+    fetch("https://quenota-web-dev.herokuapp.com:5000/courses")
       .then(res => res.json())
       .then(data => {
         data.forEach(function(element) {
@@ -159,7 +159,7 @@ class Course extends React.Component {
               aux[i]["grades"] = lista;
               encontrado2=1
               fetch(
-                `https://quenota-web-dev.herokuapp.com/:5000/students/${localStorage.getItem("email")}`,
+                `https://quenota-web-dev.herokuapp.com:5000/students/${localStorage.getItem("email")}`,
                 {
                   method: "PATCH",
                   body: JSON.stringify({ courses: aux }),
@@ -238,7 +238,7 @@ class Course extends React.Component {
               approximation: "APO"
             });
             console.log(aux);
-            fetch(`https://quenota-web-dev.herokuapp.com/:5000/students/${email}`, {
+            fetch(`https://quenota-web-dev.herokuapp.com:5000/students/${email}`, {
               method: "PATCH",
               body: JSON.stringify({ courses: aux }),
               headers: {
@@ -253,7 +253,7 @@ class Course extends React.Component {
                 element["grades"] = arreglo;
                 element["nameCourse"] = aux3;
               }
-              fetch(`https://quenota-web-dev.herokuapp.com/:5000/students/${email}`, {
+              fetch(`https://quenota-web-dev.herokuapp.com:5000/students/${email}`, {
                 method: "PATCH",
                 body: JSON.stringify({ courses: aux }),
                 headers: {

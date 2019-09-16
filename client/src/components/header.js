@@ -20,7 +20,7 @@ class header extends React.Component {
         localStorage.setItem("user",user)
         //console.log(localStorage.getItem("loggeado"))
         */
-    fetch(`https://quenota-web-dev.herokuapp.com/:5000/students/${user}`)
+    fetch(`https://quenota-web-dev.herokuapp.com:5000/students/${user}`)
       .then(res => res.json())
       .then(data => {
         //console.log(data);
@@ -47,7 +47,7 @@ class header extends React.Component {
     let pass = document.getElementsByName("passRegister")[0].value;
     //console.log(user, name, pass);
     fetch(
-      "https://quenota-web-dev.herokuapp.com/:5000/students",
+      "https://quenota-web-dev.herokuapp.com:5000/students",
       {
         method: "POST",
         body: JSON.stringify({ mail: user, password: pass, name: name }),
