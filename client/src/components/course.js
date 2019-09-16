@@ -325,7 +325,7 @@ class Course extends React.Component {
               name="nameCourseAux"
               onChange={this.handleChange}
             >
-              <option value={course}></option>
+              <option selected>{course}</option>
               {globalCourses.map(course => (
                 <option key={course}>{course}</option>
               ))}
