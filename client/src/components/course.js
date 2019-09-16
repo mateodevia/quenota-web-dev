@@ -130,39 +130,49 @@ class Course extends React.Component {
       let lista = this.state.grades;
       let aux = this.state.allCourses;
       let j = 0;
+      let encontrado=0
       lista.forEach(function(element) {
-        if (element._id === auxId) {
+        if (element._id === auxId & encontrado==0) {
           let aux2 = {
             _id: auxId,
             nameGrade: nNota,
             currentGrade: cActual,
             percentage: porcent
           };
-          element = aux2;
-          lista[j] = element;
+          
+          lista[j] = aux2;
           console.log("cambiado", element);
-          let i = 0;
-          aux.forEach(function(element) {
-            if (element["nameCourse"] === nombreCurso) {
-              aux[i]["grades"] = lista;
-            }
-            i = i + 1;
-          });
+          encontrado=1;
+
+          
+        }
+        else{
           j = j + 1;
         }
 
-        fetch(
-          `http://localhost:5000/students/${localStorage.getItem("email")}`,
-          {
-            method: "PATCH",
-            body: JSON.stringify({ courses: aux }),
-            headers: {
-              Accept: "application/json",
-              "Content-Type": "application/json"
-            }
-          }
-        );
+        
       });
+      let i = 0;
+          let encontrado2= 0
+          aux.forEach(function(element) {
+            if (element["nameCourse"] === nombreCurso& encontrado2===0) {
+              aux[i]["grades"] = lista;
+              encontrado2=1
+              fetch(
+                `http://localhost:5000/students/${localStorage.getItem("email")}`,
+                {
+                  method: "PATCH",
+                  body: JSON.stringify({ courses: aux }),
+                  headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json"
+                  }
+                }
+              );
+            }
+            else {
+            i = i + 1;}
+          });
       this.setState(
         {
           grades: lista,
@@ -327,7 +337,7 @@ class Course extends React.Component {
             >
               <option selected>{course}</option>
               {globalCourses.map(course => (
-                <option key={course}>{course}</option>
+                <option>{course}</option>
               ))}
             </select>
           </div>
