@@ -58,7 +58,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors({
-  "origin": [" http://localhost:5000", "*"],
+  "origin": [" https://quenota-web-dev.herokuapp.com/:5000", "*"],
   "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
   "preflightContinue": true,
   "optionsSuccessStatus": 204
