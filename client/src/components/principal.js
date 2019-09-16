@@ -1,20 +1,13 @@
-import React from 'react';
-import CourseList from '../components/courseList';
-import Course from '../components/course';
+import React from "react";
+import CourseList from "../components/courseList";
 
-class Principal extends React.Component{
-
-constructor(props){
-    super(props)
-}
-
-render(){
-    return(
-
-        <div className="principal">
+class Principal extends React.Component {
+  render() {
+    return (
+      <div className="principal">
         <CourseList></CourseList>
-        </div>
-   )
+      </div>
+    );
+  }
 }
-}
-export default Principal
+export default Principal;
