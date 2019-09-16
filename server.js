@@ -1,3 +1,11 @@
+const express = require("express");
+const morgan = require("morgan");
+const cors = require("cors");
+const MongoClient = require("mongodb").MongoClient;
+const expressMongoDb = require("express-mongo-db");
+
+const app = express();
+
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 } else {
@@ -7,14 +15,6 @@ if (process.env.NODE_ENV !== "production") {
     resizeBy.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
-
-const express = require("express");
-const morgan = require("morgan");
-const cors = require("cors");
-const MongoClient = require("mongodb").MongoClient;
-const expressMongoDb = require("express-mongo-db");
-
-const app = express();
 
 // Connecting to Database
 let db;
