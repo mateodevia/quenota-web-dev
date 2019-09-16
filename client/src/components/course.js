@@ -421,14 +421,14 @@ class Course extends React.Component {
         <div>
           {grades.map(grade => (
             <div>
-              {" "}
+              
               <Grade
                 id={grade._id}
                 key={grade}
                 nameGrade={grade.nameGrade}
                 currentGrade={grade.currentGrade}
                 percentage={grade.percentage}
-              ></Grade>{" "}
+              ></Grade>
               <button
                 onClick={() => this.editCourse(grade._id)}
                 className="btn btn-primary"

@@ -7,15 +7,7 @@ const path= require("path")
 const app = express();
 
 
-if (process.env.NODE_ENV !== "production") {
-  require("dotenv").config();
-} else {
-  app.use(express.static("client/build"));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-  });
-}
 
 // Connecting to Database
 let db;
@@ -57,3 +49,14 @@ app.use("/courses", coursesRouter);
 app.use("/students", studentsRouter);
 app.use("/studentsCourses", studentsCoursesRouter);
 app.use("/studentsCoursesGrades", studentsCoursesGradesRouter);
+
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+} else {
+  app.use(express.static("client/build"));
+
+  app.get("/", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
+
