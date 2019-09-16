@@ -57,9 +57,9 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors({
-  "origin": "*",
+  "origin": [" http://localhost:5000", "*"],
   "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-  "preflightContinue": false,
+  "preflightContinue": true,
   "optionsSuccessStatus": 204
 }));
 app.use(expressMongoDb(process.env.DATABASE_URL));
