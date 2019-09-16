@@ -14,21 +14,21 @@ class header extends React.Component {
     let user = document.getElementsByName("user")[0].value;
     let pass = document.getElementsByName("pass")[0].value;
 
-    console.log(user, pass);
-    /* console.log("Loggin Exitoso")
+    //console.log(user, pass);
+    /* //console.log("Loggin Exitoso")
         localStorage.setItem("loggeado",true)
         localStorage.setItem("user",user)
-        console.log(localStorage.getItem("loggeado"))
+        //console.log(localStorage.getItem("loggeado"))
         */
     fetch(`https://quenota-web-dev.herokuapp.com/:5000/students/${user}`)
       .then(res => res.json())
       .then(data => {
-        console.log(data);
+        //console.log(data);
         if (data["password"] === pass) {
-          console.log("Loggin Exitoso");
+          //console.log("Loggin Exitoso");
           localStorage.setItem("loggeado", true);
           localStorage.setItem("email", user);
-          console.log(localStorage.getItem("loggeado"));
+          //console.log(localStorage.getItem("loggeado"));
           this.refresh();
         }
       });
@@ -45,7 +45,7 @@ class header extends React.Component {
     let user = document.getElementsByName("userRegister")[0].value;
     let name = document.getElementsByName("nameRegister")[0].value;
     let pass = document.getElementsByName("passRegister")[0].value;
-    console.log(user, name, pass);
+    //console.log(user, name, pass);
     fetch(
       "https://quenota-web-dev.herokuapp.com/:5000/students",
       {
