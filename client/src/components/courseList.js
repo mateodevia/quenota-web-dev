@@ -43,7 +43,7 @@ class  CourseList extends React.Component {
     let listaCursos =[]
     let email = this.state.email
     console.log(email)
-    fetch(`https://quenota-web-dev.herokuapp.com:5000/students/${email}`)
+    fetch(`https://quenota-web-dev.herokuapp.com/students/${email}`)
       .then(res => res.json())
       .then(data => {
 
