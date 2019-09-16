@@ -6,6 +6,13 @@ const expressMongoDb = require("express-mongo-db");
 
 const app = express();
 
+app.use(cors({
+  "origin": "*",
+  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "preflightContinue": true,
+  "optionsSuccessStatus": 204
+}));
+
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 } else {
