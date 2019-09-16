@@ -327,7 +327,7 @@ class Course extends React.Component {
             >
               <option value={course}></option>
               {globalCourses.map(course => (
-                <option>{course}</option>
+                <option key={course}>{course}</option>
               ))}
             </select>
           </div>
@@ -414,6 +414,7 @@ class Course extends React.Component {
               {" "}
               <Grade
                 id={grade._id}
+                key={grade}
                 nameGrade={grade.nameGrade}
                 currentGrade={grade.currentGrade}
                 percentage={grade.percentage}
