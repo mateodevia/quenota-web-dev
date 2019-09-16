@@ -75,7 +75,7 @@ class  CourseList extends React.Component {
       <br></br>
       <h1>Mis Cursos</h1>
       <ul>
-      {this.state.courses.map(course => <h4 id={course} onClick={()=>this.enviarURL(course)}>{course}</h4 >)}
+      {this.state.courses.map(course => <h4 key={course} id={course} onClick={()=>this.enviarURL(course)}>{course}</h4 >)}
       </ul>
       <hr></hr>
       <button id="nuevo"className="btn btn-light nuevoCurso" onClick={()=>this.enviarURL("nuevo")}>Nuevo</button>
@@ -97,7 +97,7 @@ class  CourseList extends React.Component {
       <br></br>
       <h1>Mis Cursos</h1>
       <ul>
-      {this.state.courses.map(course => <h4 id={course} onClick={()=>this.enviarURL(course)}>{course}</h4 >)}
+      {this.state.courses.map(course => <h4 key={course} id={course} onClick={()=>this.enviarURL(course)}>{course}</h4 >)}
 
       </ul>
       <hr></hr>
