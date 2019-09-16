@@ -35,12 +35,6 @@ MongoClient.connect(
   }
 );
 
-// Importing routes
-const coursesRouter = require("./routes/courses");
-const studentsRouter = require("./routes/students");
-const studentsCoursesRouter = require("./routes/studentsCourses");
-const studentsCoursesGradesRouter = require("./routes/studentsCoursesGrades");
-
 // Settings
 app.set("port", process.env.PORT || 5000);
 
@@ -63,6 +57,12 @@ app.use(cors({
   "optionsSuccessStatus": 204
 }));
 app.use(expressMongoDb(process.env.DATABASE_URL));
+
+// Importing routes
+const coursesRouter = require("./routes/courses");
+const studentsRouter = require("./routes/students");
+const studentsCoursesRouter = require("./routes/studentsCourses");
+const studentsCoursesGradesRouter = require("./routes/studentsCoursesGrades");
 
 // Routes
 app.use("/courses", coursesRouter);
