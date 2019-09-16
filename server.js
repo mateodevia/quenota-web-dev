@@ -56,7 +56,7 @@ app.use((req, res, next) => {
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors({ origin: "https://quenota-web-dev.herokuapp.com" }));
+app.use(cors({ origin: "*" }));
 app.use(expressMongoDb(process.env.DATABASE_URL));
 
 // Routes
