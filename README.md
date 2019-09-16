@@ -1,6 +1,6 @@
-# back-QueNota
+# QueNota
 
-Back for the web application "Que Nota", it is an API REST to connect to a MongoDB qith information of students and some courses offer by Universidad de los Andes in Colombia.
+Web application "Que Nota", it is a React app and have also API REST to connect to a MongoDB with information of students and some courses offer by Universidad de los Andes in Colombia.
 
 ![screenShotQueNota](https://raw.githubusercontent.com/cabeltran10/quenota-web-dev/master/img/queNota.png)
 
@@ -8,7 +8,7 @@ Back for the web application "Que Nota", it is an API REST to connect to a Mongo
 
 ## Running the website
 
-Since this is a API Rest it is necessary to make some changes and setup your environment so you can run it in your own computer.
+Since this application is not a static application, you should have some thinks to do before you can start.
 
 <hr>
 
@@ -30,7 +30,22 @@ mongod
 
 So the local DB start and let you connect to it
 
-## Quick Start
+### Important information
+
+You need to create a
+`.env`
+file in root of the proyect, in this file you should add the
+`DATABASE_URL=<yourDatabaseURL>`
+
+For example `DATABASE_URL=mongodb://localhost/quenota`
+
+So the program will know where is the data base. If you have access to an Atlas Cluster you can add it also there, that information will never get into a repository at least you change de `.gitignore` file.
+
+Because is not possible to give you access to the created database, you can find a sample of poblation to the data base in the directory `rest`. It's a small sample but so you can know how to put some data. In this same directory you could find the other samples to test de API REST.
+
+You could find all the courses used to the real database in the directory `data` in a `.csv` file if you want to try something with this proyect.
+
+## Start
 
 ```bash
 # Install dependencies for server
@@ -50,21 +65,6 @@ npm run client
 
 # Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
-
-### Important information
-
-You need to create a
-`.env`
-file in root of the proyect, in this file you should add the
-`DATABASE_URL=<yourDatabaseURL>`
-
-For example `DATABASE_URL=mongodb://localhost/quenota`
-
-So the program will know where is the data base. If you have access to an Atlas Cluster you can add it also there, that information will never get into a repository at least you change de `.gitignore` file.
-
-Because is not possible to give you access to the created database, you can find a sample of poblation to the data base in the directory `rest`. It's a small sample but so you can know how to put some data. In this same directory you could find the other samples to test de API REST.
-
-You could find all the courses used to the real database in the directory `data` in a `.csv` file if you want to try something with this proyect.
 
 <hr>
 
